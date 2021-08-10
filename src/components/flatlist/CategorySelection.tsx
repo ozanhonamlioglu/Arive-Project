@@ -9,6 +9,7 @@ import CategorySelectionItem from '../flatlistItems/CategorySelectionItem'
 
 interface Props {
     data?: ISubCategory[]
+    callback?: (id: string) => void
 }
 
 const CategorySelection: React.FC<Props> = (props) => {
@@ -17,7 +18,7 @@ const CategorySelection: React.FC<Props> = (props) => {
         <FlatList
             data={props.data}
             keyExtractor={(item, index) => "CustomAcordion-" + index}
-            renderItem={({ item, index }) => <CategorySelectionItem {...item} /> }
+            renderItem={({ item, index }) => <CategorySelectionItem {...item} callback={props.callback} /> }
             horizontal
         /></View>
     )

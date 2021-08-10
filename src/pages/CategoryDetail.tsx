@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Alert } from 'react-native'
 
 // components
 import BigBanner from '../components/banners/BigBanner'
@@ -14,7 +15,7 @@ import { categories, products } from '../modules'
 import ICategoryDetail from '../models/categorydetail'
 import IProductList from '../models/productlist'
 
-const CategoryDetail = () => {
+const CategoryDetail: React.FC = () => {
   const [categoryLoading, setCategoryLoading] = useState(true);
   const [productsLoading, setProductsLoading] = useState(true);
 
@@ -38,6 +39,10 @@ const CategoryDetail = () => {
     setProductsLoading(false)
   }
 
+  const changeCategoryCallback = (id: string) => {
+    Alert.alert(`It works but for simplicity I call only propmt. ${id}`)
+  }
+
   return (
     <>
       {
@@ -45,7 +50,7 @@ const CategoryDetail = () => {
         <>
           <BigBanner title={categoryDetail?.name} />
           <Spacer height={10} />
-          <CategorySelection data={categoryDetail?.subCategories} />
+          <CategorySelection data={categoryDetail?.subCategories} callback={changeCategoryCallback} />
           <Spacer height={10} />
           <ProductList data={productList} />
         </>

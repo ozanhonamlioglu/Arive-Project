@@ -4,9 +4,13 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 // interface
 import { ISubCategory } from '../../models/categorydetail'
 
-const CategorySelectionItem: React.FC<ISubCategory> = (props) => {
+interface Props extends ISubCategory {
+    callback?: (id: string) => void
+}
+
+const CategorySelectionItem: React.FC<Props> = (props) => {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={() => props.callback?.(props.id)}>
             <Text>{props.name}</Text>
         </TouchableOpacity>
     )
