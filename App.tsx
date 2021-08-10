@@ -22,7 +22,7 @@
 
    return (
      <SafeAreaView style={{ flex: 1 }}>
-        <View style={{ flex: 1, paddingHorizontal: 10 }}>
+        <View style={styles.container}>
           <CategoryDetail />
         </View>
      </SafeAreaView>
@@ -31,7 +31,8 @@
 
  const styles = StyleSheet.create({
    container: {
-     padding: 5
+    flex: 1, 
+    paddingHorizontal: 10
    }
  })
 
