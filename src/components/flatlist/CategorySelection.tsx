@@ -20,6 +20,7 @@ const CategorySelection: React.FC<Props> = (props) => {
             keyExtractor={(item, index) => "CustomAcordion-" + index}
             renderItem={({ item, index }) => <CategorySelectionItem {...item} callback={props.callback} /> }
             horizontal
+            showsHorizontalScrollIndicator={false}
         /></View>
     )
 }

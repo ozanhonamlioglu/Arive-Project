@@ -159,7 +159,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				65DD4BABDE3DE345CE9F4F21 /* [CP] Embed Pods Frameworks */,
 				D21D5EC03E067224DE4C0C0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -182,7 +181,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6A01ABD2A79D78ABADD960F8 /* [CP] Embed Pods Frameworks */,
 				3959FCA1009AD55A013C9826 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -301,40 +299,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arive/Pods-Arive-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65DD4BABDE3DE345CE9F4F21 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arive-AriveTests/Pods-Arive-AriveTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arive-AriveTests/Pods-Arive-AriveTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arive-AriveTests/Pods-Arive-AriveTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A01ABD2A79D78ABADD960F8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arive/Pods-Arive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arive/Pods-Arive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arive/Pods-Arive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CAFD9D8F64EF9E4F21D98402 /* [CP] Check Pods Manifest.lock */ = {
